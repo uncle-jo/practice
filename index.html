@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="header">
+		<div class="headertop">
+			<div class="container">
+				<div class="headertop-dropdown">
+					<select class="headertop-dropdown__language" name="language" id="language">
+						<option class="option-text" value="EN">EN</option>
+						<option class="option-text" value="RU">RU</option>
+					</select>
+					<p class="separator">|</p>
+					<select class="headertop-dropdown__currency" name="currency" id="currency">
+						<option class="option-text" value="USD">USD</option>
+						<option class="option-text" value="RUB">RUB</option>
+					</select>
+				</div>
+				<div class="headertop-info">
+					<i class="far fa-heart headertop-info__img"></i>
+					<p class="headertop-info__text">Wishlist: 2</p>
+					<p class="separator">|</p>
+					<i class="fas fa-exchange-alt headertop-info__img"></i>
+					<p class="headertop-info__text">Compare: 3</p>
+					<p class="separator">|</p>
+					<i class="far fa-user headertop-info__img"></i>
+					<p class="headertop-info__text">Login</p>
+				</div>
+			</div>
+		</div>
+		<div class="headerbottom">
+			<div class="container">
+				<div class="headerbottom-logo">
+					<h1 class="headerbottom-logo__title">Privilege</h1>
+				</div>
+				<div class="headerbottom-menu">
+					<ul class="headerbottom-menu__list">
+						<li class="item"><a href="women.html" class="link">HOME</a></li>
+						<li class="item"><a href="women.html" class="link">ABOUT</a></li>
+						<li class="item"><a href="women.html" class="link">MEN</a></li>
+						<li class="item"><a href="women.html" class="link">WOMEN</a></li>
+						<li class="item"><a href="women.html" class="link">ACCESORIES</a></li>
+						<li class="item"><a href="women.html" class="link">BLOG</a></li>
+						<li class="item"><a href="women.html" class="link link_bolt">BUY THEME!</a></li>
+					</ul>
+				</div>
+				<div class="headerbottom-button">
+					<a href="#" class="headerbottom-button__link"><i class="fa fa-search headerbottom-button__img" aria-hidden="true"></i></a>
+					<a href="#" class="headerbottom-button__link"><i class="fa fa-shopping-cart headerbottom-button__img" aria-hidden="true"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="slideshow-container">
+			<div class="slide fade">
+				<img class="slideshow-container__img" src="img/for_slider.png" style="width: 100%;" alt="slide1">
+			</div>
+			<div class="slide fade">
+				<img class="slideshow-container__img" src="img/for_slider.png" style="width: 100%;" alt="slide1">
+			</div>
+			<div class="slide fade">
+				<img class="slideshow-container__img" src="img/for_slider.png" style="width: 100%;" alt="slide1">
+			</div>			
+			<a class="slideshow-container__prev" onclick="plusSlides(-1)">&#10094</a>
+			<a class="slideshow-container__next" onclick="plusSlides(1)">&#10095</a>
+			<div class="slideshow-dots">
+				<span class="slideshow-dots__dot" onclick="currentSlide(1)"></span>
+				<span class="slideshow-dots__dot" onclick="currentSlide(2)"></span>
+				<span class="slideshow-dots__dot" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+		<div class="container">
+			<div class="banners">
+				<div class="banners-block">
+					<a href="women.html" class="banners-block__link">
+						<img src="img/banner1.png" alt="banners1" class="banners-block__img">
+					</a>
+				</div>
+				<div class="banners-block">
+					<a href="women.html" class="banners-block__link">
+						<img src="img/banner2.png" alt="banners2" class="banners-block__img">
+					</a>
+				</div>
+				<div class="banners-block">
+					<a href="women.html" class="banners-block__link">
+						<img src="img/banner3.png" alt="banners3" class="banners-block__img">
+					</a>
+				</div>
+			</div>
+			<div class="featured_products">
+				<hr>
+				<p class="featured_products__text">Featured Products</p>
+				<div class="featured_products-block">
+					<div class="featured_products-block__item_card">
+						<img src="img/foto1.png" alt="foto1" class="item-card__img">
+						<p class="item-card__text">Women White Shirt</p>
+						<h2 class="item-card__title" style="justify-content: center;">$150.00</h2>
+						<a href="product.html" class="item-card__btn">ADD TO CARD</a>
+					</div>
+					<div class="featured_products-block__item_card">
+						<img src="img/foto2.png" alt="foto2" class="item-card__img">
+						<p class="item-card__text">Mini Dress</p>
+						<h2 class="item-card__title"><span class="title_span">$320.00</span>$230.00</h2>
+						<a href="product.html" class="item-card__btn">ADD TO CARD</a>
+					</div>
+					<div class="featured_products-block__item_card">
+						<img src="img/foto3.png" alt="foto3" class="item-card__img">
+						<p class="item-card__text">Women Evenind Dress</p>
+						<h2 class="item-card__title"><span class="title_span">$250.00</span>$190.00</h2>
+						<a href="product.html" class="item-card__btn">ADD TO CARD</a>
+					</div>
+					<div class="featured_products-block__item_card">
+						<img src="img/foto4.png" alt="foto4" class="item-card__img">
+						<p class="item-card__text">Men Suit Jacet</p>
+						<h2 class="item-card__title"><span class="title_span">$350.00</span>$300.00</h2>
+						<a href="product.html" class="item-card__btn">ADD TO CARD</a>
+					</div>
+				</div>
+			</div>
+			<div class="featured_products">
+				<hr>
+				<p class="featured_products__text">Featured Products</p>
+				<div class="featured_products-block">
+					<div class="featured_products-block__item_card">
+						<img src="img/foto5.png" alt="foto5" class="item-card__img">
+						<p class="item-card__text">Men Sweater</p>
+						<h2 class="item-card__title" style="justify-content: center;">$160.00</h2>
+						<a href="product.html" class="item-card__btn">ADD TO CARD</a>
+					</div>
+					<div class="featured_products-block__item_card">
+						<img src="img/foto6.png" alt="foto6" class="item-card__img">
+						<p class="item-card__text">Women Shirt Summer</p>
+						<h2 class="item-card__title" style="justify-content: center;">$280.00</h2>
+						<a href="product.html" class="item-card__btn">ADD TO CARD</a>
+					</div>
+					<div class="featured_products-block__item_card">
+						<img src="img/foto7.png" alt="foto7" class="item-card__img">
+						<p class="item-card__text">Men Suit Jacket</p>
+						<h2 class="item-card__title"><span class="title_span">$320.00</span>$250.00</h2>
+						<a href="product.html" class="item-card__btn">ADD TO CARD</a>
+					</div>
+					<div class="featured_products-block__item_card">
+						<img src="img/foto8.png" alt="foto8" class="item-card__img">
+						<p class="item-card__text">Women Sweater</p>
+						<h2 class="item-card__title"><span class="title_span">$180.00</span>$150.00</h2>
+						<a href="product.html" class="item-card__btn">ADD TO CARD</a>
+					</div>
+				</div>
+			</div>
+			<div class="featured_products">
+				<hr>
+				<p class="featured_products__text">New Arivals</p>
+				<div class="featured_products-block">
+					<div class="featured_products-block__item_card">
+						<img src="img/foto9.png" alt="foto9" class="item-card__img">
+						<p class="item-card__text">Women Top</p>
+						<h2 class="item-card__title" style="justify-content: center;">$150.00</h2>
+						<a href="product.html" class="item-card__btn">ADD TO CARD</a>
+					</div>
+					<div class="featured_products-block__item_card">
+						<img src="img/foto10.png" alt="foto10" class="item-card__img">
+						<p class="item-card__text">Women Sweater</p>
+						<h2 class="item-card__title"><span class="title_span">$320.00</span>$230.00</h2>
+						<a href="product.html" class="item-card__btn">ADD TO CARD</a>
+					</div>
+					<div class="featured_products-block__item_card">
+						<img src="img/foto11.png" alt="foto11" class="item-card__img">
+						<p class="item-card__text">Women's Evening Dress</p>
+						<h2 class="item-card__title"><span class="title_span">$250.00</span>$190.00</h2>
+						<a href="product.html" class="item-card__btn">ADD TO CARD</a>
+					</div>
+					<div class="featured_products-block__item_card">
+						<img src="img/foto12.png" alt="foto12" class="item-card__img">
+						<p class="item-card__text">Women Evening Dress</p>
+						<h2 class="item-card__title"><span class="title_span">$350.00</span>$300.00</h2>
+						<a href="product.html" class="item-card__btn">ADD TO CARD</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="shop_by_brands">
+			<hr>
+			<p class="shop_by_brands__text">Shop By Brands</p>
+			<div class="shop_by_brands-block">
+				<div class="shop_by_brands-block__item_card">
+					<img src="img/logo1.png" alt="logo1" class="item-card__img">
+				</div>
+				<div class="shop_by_brands-block__item_card">
+					<img src="img/logo2.png" alt="logo2" class="item-card__img">
+				</div>
+				<div class="shop_by_brands-block__item_card">
+					<img src="img/logo3.png" alt="logo3" class="item-card__img">
+				</div>
+				<div class="shop_by_brands-block__item_card">
+					<img src="img/logo4.png" alt="logo4" class="item-card__img">
+				</div>
+				<div class="shop_by_brands-block__item_card">
+					<img src="img/logo5.png" alt="logo5" class="item-card__img">
+				</div>
+				<div class="shop_by_brands-block__item_card">
+					<img src="img/logo6.png" alt="logo6" class="item-card__img">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="subscribe">
+				<div class="subscribe-msg">
+					<p class="subscribe-msg__text">SUBSCRIBE TO OUR NEWSLETTER AND GET A $30 VOUCHER</p>
+				</div>
+				<div class="subscribe-input">
+					<form action="/" method="POST" class="form-subscribe">
+						<input type="email" class="form-subscribe__email" name="email" placeholder="Email Address" required>
+						<button type="submit" class="form-subscribe__btn" name="subscribe">SUBSCRIBE</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="nav_links">
+			<div class="container">
+				<div class="nav">
+					<div class="nav-block">
+						<h4 class="nav-block__title">what's hot</h4>
+						<ul class="menu">
+							<li class="menu__item"><a href="product.html" class="menu__link">Discount Voucher</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Summer Collection</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Popular Products</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Best Seller</a></li>
+						</ul>
+					</div>
+					<div class="nav-block">
+						<h4 class="nav-block__title">brands</h4>
+						<ul class="menu">
+							<li class="menu__item"><a href="product.html" class="menu__link">Giorgio Armani</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Versace</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Chanel</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Gucci</a></li>
+						</ul>
+					</div>
+					<div class="nav-block">
+						<h4 class="nav-block__title">men shop</h4>
+						<ul class="menu">
+							<li class="menu__item"><a href="product.html" class="menu__link">Suit Jacket</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Sweater</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Shirt</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Tops</a></li>
+						</ul>
+					</div>
+					<div class="nav-block">
+						<h4 class="nav-block__title">woman shop</h4>
+						<ul class="menu">
+							<li class="menu__item"><a href="product.html" class="menu__link">Dresses</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Sweater</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Shirt</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Tops</a></li>
+						</ul>
+					</div>
+					<div class="nav-block">
+						<h4 class="nav-block__title">accesories</h4>
+						<ul class="menu">
+							<li class="menu__item"><a href="product.html" class="menu__link">Sunglasses</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Clock</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Bags</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Hats</a></li>
+						</ul>
+					</div>
+					<div class="nav-block">
+						<h4 class="nav-block__title">help</h4>
+						<ul class="menu">
+							<li class="menu__item"><a href="product.html" class="menu__link">F.A.Q.</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Shipping</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Privacy Policy</a></li>
+							<li class="menu__item"><a href="product.html" class="menu__link">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+				<hr class="separator">
+				<div class="contacts">
+					<div class="social">
+						<h4 class="social__title">FOLLOW US</h4>
+						<div class="social-block">
+							<a href="#" class="social-block__link"><i class="fab fa-facebook-f icon"></i></a>
+							<a href="#" class="social-block__link"><i class="fab fa-twitter icon"></i></a>
+							<a href="#" class="social-block__link"><i class="fab fa-pinterest-p icon"></i></a>
+							<a href="#" class="social-block__link"><i class="fab fa-instagram icon"></i></a>
+							<a href="#" class="social-block__link"><i class="fab fa-youtube icon"></i></a>
+							<a href="#" class="social-block__link"><i class="fab fa-behance icon"></i></a>
+							<a href="#" class="social-block__link"><i class="fas fa-basketball-ball icon"></i></a>
+							<a href="#" class="social-block__link"><i class="fab fa-google-plus-g icon"></i></a>
+						</div>
+					</div>
+					<div class="accept">
+						<h4 class="accept__title">WE ACCEPT</h4>
+						<div class="accept-block"><img src="img/footer1.png" alt="1" class="accept-block__img"></div>
+						<div class="accept-block"><img src="img/footer2.png" alt="2" class="accept-block__img"></div>
+						<div class="accept-block"><img src="img/footer3.png" alt="3" class="accept-block__img"></div>
+						<div class="accept-block"><img src="img/footer4.png" alt="4" class="accept-block__img"></div>
+						<div class="accept-block"><img src="img/footer5.png" alt="5" class="accept-block__img"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyrights">
+			<div class="copyrights-container">
+				<p class="copyrights-container__text">© 2016 Privilege. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
