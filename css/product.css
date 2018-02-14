@@ -210,8 +210,15 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
-  text-align: center;
   cursor: pointer;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 .content .product .product-details .details-item .item-description .description-info__status {
   font-family: Lato;
@@ -263,7 +270,7 @@
   border: 1px solid #e5e5e5;
 }
 .content .product .product-details .details-item .social .social-block__menu .social-block__item .social-block__link {
-  padding: 8px 13px;
+  padding: 8px 10px;
   color: #8c8c8c;
 }
 .content .product .info {

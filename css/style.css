@@ -82,10 +82,23 @@
   display: flex;
   padding: 7px 0 8px 0;
 }
-.header .headertop .container .headertop-info__img {
+.header .headertop .container .headertop-info .link {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  text-decoration: none;
+}
+.header .headertop .container .headertop-info .link__img {
+  font-family: 'Lato';
+  color: #ccb48e;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 16px;
   padding-right: 10px;
 }
-.header .headertop .container .headertop-info__text {
+.header .headertop .container .headertop-info .link__text {
   font-family: 'Lato';
   color: #ccb48e;
   font-size: 14px;

@@ -112,11 +112,68 @@
 					}		
 					.priceform {
 						margin-top: 18px;
+						.priceform-block {
+							display: -webkit-flex;
+							display: -moz-flex;
+							display: -ms-flex;
+							display: -o-flex;
+							display: flex;
+							align-items: center;
+							label {
+								position: relative;
+								font-family: Lato;
+								color: #8c8c8c;
+								font-size: 14px;
+								font-weight: 300;
+								line-height: 30px;
+								text-align: left;
+							}
+							input { display: none; }
+							label:before {
+								content: "";
+								width: 12px;
+								height: 12px;
+								display: inline-block;
+								border: 1px solid #8c8c8c;
+								vertical-align: middle;
+								margin-right: 9px;
+							}
+							input:checked + label:after {
+								content: "";
+								width: 12px;
+								height: 12px;
+								display: inline-block;
+								background: black;
+								vertical-align: middle;
+								position: absolute;
+								left: 2px;
+								top: 10px;
+								background: url(../img/checkmark.png) no-repeat;
+								background-size: 100%;
+							}
+							// .priceform__check {
+							// 	border: 1px solid #8c8c8c;
+							// 	width: 12px;
+							// 	height: 12px;
+							// 	-webkit-appearance: none;
+							// 	-moz-appearance: none;
+							// 	outline: none;
+							// }
+							// .priceform__text {
+							// 	font-family: Lato;
+							// 	color: #8c8c8c;
+							// 	font-size: 14px;
+							// 	font-weight: 300;
+							// 	line-height: 30px;
+							// 	text-align: left;
+							// }
+						}
 						// input[type=checkbox] {
 						// 	display: none;
 						// }
 						// .checkbox label:before {
 						// 	border-radius: 3px;
+
 						// }
 						// input[type=checkbox]:checked + label:before {
 						// 	content: "\2713";
@@ -126,22 +183,7 @@
 						// 	text-align: center;
 						// 	line-height: 15px;
 						// }
-						&__check {
-							border: 1px solid #8c8c8c;
-							width: 12px;
-							height: 12px;
-							-webkit-appearance: none;
-							-moz-appearance: none;
-							outline: none;
-						}
-						&__text {
-							font-family: Lato;
-							color: #8c8c8c;
-							font-size: 14px;
-							font-weight: 300;
-							line-height: 30px;
-							text-align: left;
-						}
+						
 					}
 					.seporator {
 						background-color: rgba(102, 102, 102, 0.15);
@@ -184,15 +226,8 @@
 						margin-top: 18px;
 						.sizeform-left {
 							.sizeform-block {
-								&__check {
-									border:1px solid #8c8c8c;
-									width: 12px;
-									height: 12px;
-									-webkit-appearance: none;
-									-moz-appearance: none;
-									outline: none;
-								}
-								&__text {
+								label {
+									position: relative;
 									font-family: Lato;
 									color: #8c8c8c;
 									font-size: 14px;
@@ -200,26 +235,81 @@
 									line-height: 30px;
 									text-align: left;
 								}
+								input { display: none; }
+								label:before {
+									content: "";
+									width: 12px;
+									height: 12px;
+									display: inline-block;
+									border: 1px solid #8c8c8c;
+									vertical-align: middle;
+									margin-right: 9px;
+								}
+								input:checked + label:after {
+									content: "";
+									width: 12px;
+									height: 12px;
+									display: inline-block;
+									background: black;
+									vertical-align: middle;
+									position: absolute;
+									left: 2px;
+									top: 4px;
+									background: url(../img/checkmark.png) no-repeat;
+									background-size: 100%;
+								}
+								// &__check {
+								// 	border:1px solid #8c8c8c;
+								// 	width: 12px;
+								// 	height: 12px;
+								// 	-webkit-appearance: none;
+								// 	-moz-appearance: none;
+								// 	outline: none;
+								// }
+								// &__text {
+								// 	font-family: Lato;
+								// 	color: #8c8c8c;
+								// 	font-size: 14px;
+								// 	font-weight: 300;
+								// 	line-height: 30px;
+								// 	text-align: left;
+								// }
 							}						
 						}
 						.sizeform-right {
 							margin-left: 93px;
 							.sizeform-block {
-								&__check {
-									border: 1px solid #8c8c8c;
-									width: 12px;
-									height: 12px;
-									-webkit-appearance: none;
-									-moz-appearance: none;
-									outline: none;
-								}
-								&__text {
+								label {
+									position: relative;
 									font-family: Lato;
 									color: #8c8c8c;
 									font-size: 14px;
 									font-weight: 300;
 									line-height: 30px;
 									text-align: left;
+								}
+								input { display: none; }
+								label:before {
+									content: "";
+									width: 12px;
+									height: 12px;
+									display: inline-block;
+									border: 1px solid #8c8c8c;
+									vertical-align: middle;
+									margin-right: 9px;
+								}
+								input:checked + label:after {
+									content: "";
+									width: 12px;
+									height: 12px;
+									display: inline-block;
+									background: black;
+									vertical-align: middle;
+									position: absolute;
+									left: 2px;
+									top: 4px;
+									background: url(../img/checkmark.png) no-repeat;
+									background-size: 100%;
 								}
 							}						
 						}
@@ -340,20 +430,32 @@
 								line-height: 24px;
 								text-align: left;
 							}
+							&__link {
+								text-decoration: none;
+								color: #8c8c8c;
+								padding: 8px 10px;
+								&:hover {
+									color: #333;
+									padding: 7px 9px;
+									background-color: #fff;
+									box-sizing: border-box;
+									border: 1px solid #e5e5e5;
+								}
+							}
 							.view-icons {
 								font-size: 18px;
-								&__link {
-									text-decoration: none;
-									color: #8c8c8c;
-									padding: 8px 10px;
-									&:hover {
-										color: #333;
-										padding: 7px 9px;
-										background-color: #fff;
-										box-sizing: border-box;
-										border: 1px solid #e5e5e5;
-									}
-								}
+								// &__link {
+								// 	text-decoration: none;
+								// 	color: #8c8c8c;
+								// 	padding: 8px 10px;
+								// 	&:hover {
+								// 		color: #333;
+								// 		padding: 7px 9px;
+								// 		background-color: #fff;
+								// 		box-sizing: border-box;
+								// 		border: 1px solid #e5e5e5;
+								// 	}
+								// }
 							}
 						}
 					}

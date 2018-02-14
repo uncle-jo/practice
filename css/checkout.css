@@ -1,0 +1,199 @@
+.checkout-contnt {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.checkout-contnt .billing__title {
+  font-family: Lato;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+.checkout-contnt .billing .billing-details {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 476px;
+  width: 580px;
+}
+.checkout-contnt .billing .billing-details .fullname-block {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.checkout-contnt .billing .billing-details .fullname-block__name {
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 280px;
+  height: 42px;
+  outline: none;
+  font-family: Lato;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: left;
+  padding: 0 0 0 16px;
+}
+.checkout-contnt .billing .billing-details .billing-details__input {
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  height: 42px;
+  outline: none;
+  font-family: Lato;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: left;
+  padding: 0 0 0 16px;
+}
+.checkout-contnt .billing .billing-details .phone-block {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.checkout-contnt .billing .billing-details .phone-block__input {
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  width: 280px;
+  height: 42px;
+  outline: none;
+  font-family: Lato;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: left;
+  padding: 0 0 0 16px;
+}
+.checkout-contnt .billing .billing-details .billing-details__notes {
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  height: 104px;
+  outline: none;
+  font-family: Lato;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: left;
+  padding: 16px 0 0 16px;
+}
+.checkout-contnt .payment__title {
+  font-family: Lato;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+.checkout-contnt .payment .payment-method {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 343px;
+  width: 581px;
+}
+.checkout-contnt .payment .payment-method .radio-block {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  width: 152px;
+}
+.checkout-contnt .payment .payment-method .radio-block .payment-method__radio {
+  cursor: pointer;
+}
+.checkout-contnt .payment .payment-method .radio-block .payment-method__label {
+  font-family: Lato;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: left;
+  cursor: pointer;
+}
+.checkout-contnt .payment .payment-method .radio-block_second {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 452px;
+}
+.checkout-contnt .payment .payment-method .radio-block_second .payment-method__radio {
+  cursor: pointer;
+}
+.checkout-contnt .payment .payment-method .radio-block_second .payment-method__label {
+  font-family: Lato;
+  color: #8c8c8c;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: left;
+  cursor: pointer;
+}
+.checkout-contnt .payment .payment-method .radio-block_second .radio-block__img {
+  border: 1px solid #e5e5e5;
+}
+.checkout-contnt .payment .payment-method .seporator {
+  background-color: rgba(102, 102, 102, 0.15);
+  border-width: 0px 0px 1px 0px;
+  width: 100%;
+}
+.checkout-contnt .payment .payment-method__price {
+  font-family: Lato;
+  color: #8c8c8c;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.checkout-contnt .payment .payment-method__price .payment-method__total {
+  color: #333333;
+}
+.checkout-contnt .payment .payment-method__btn {
+  background-color: #ccb48e;
+  width: 180px;
+  height: 42px;
+  font-family: Lato;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  border: 0;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+}

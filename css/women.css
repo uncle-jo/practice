@@ -112,21 +112,47 @@
 .content .container .middle-block .filter .price .priceform {
   margin-top: 18px;
 }
-.content .container .middle-block .filter .price .priceform__check {
-  border: 1px solid #8c8c8c;
-  width: 12px;
-  height: 12px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  outline: none;
+.content .container .middle-block .filter .price .priceform .priceform-block {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
 }
-.content .container .middle-block .filter .price .priceform__text {
+.content .container .middle-block .filter .price .priceform .priceform-block label {
+  position: relative;
   font-family: Lato;
   color: #8c8c8c;
   font-size: 14px;
   font-weight: 300;
   line-height: 30px;
   text-align: left;
+}
+.content .container .middle-block .filter .price .priceform .priceform-block input {
+  display: none;
+}
+.content .container .middle-block .filter .price .priceform .priceform-block label:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border: 1px solid #8c8c8c;
+  vertical-align: middle;
+  margin-right: 9px;
+}
+.content .container .middle-block .filter .price .priceform .priceform-block input:checked + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: black;
+  vertical-align: middle;
+  position: absolute;
+  left: 2px;
+  top: 10px;
+  background: url(../img/checkmark.png) no-repeat;
+  background-size: 100%;
 }
 .content .container .middle-block .filter .price .seporator {
   background-color: rgba(102, 102, 102, 0.15);
@@ -166,40 +192,76 @@
   display: flex;
   margin-top: 18px;
 }
-.content .container .middle-block .filter .size .sizeform .sizeform-left .sizeform-block__check {
-  border: 1px solid #8c8c8c;
-  width: 12px;
-  height: 12px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  outline: none;
-}
-.content .container .middle-block .filter .size .sizeform .sizeform-left .sizeform-block__text {
+.content .container .middle-block .filter .size .sizeform .sizeform-left .sizeform-block label {
+  position: relative;
   font-family: Lato;
   color: #8c8c8c;
   font-size: 14px;
   font-weight: 300;
   line-height: 30px;
   text-align: left;
+}
+.content .container .middle-block .filter .size .sizeform .sizeform-left .sizeform-block input {
+  display: none;
+}
+.content .container .middle-block .filter .size .sizeform .sizeform-left .sizeform-block label:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border: 1px solid #8c8c8c;
+  vertical-align: middle;
+  margin-right: 9px;
+}
+.content .container .middle-block .filter .size .sizeform .sizeform-left .sizeform-block input:checked + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: black;
+  vertical-align: middle;
+  position: absolute;
+  left: 2px;
+  top: 4px;
+  background: url(../img/checkmark.png) no-repeat;
+  background-size: 100%;
 }
 .content .container .middle-block .filter .size .sizeform .sizeform-right {
   margin-left: 93px;
 }
-.content .container .middle-block .filter .size .sizeform .sizeform-right .sizeform-block__check {
-  border: 1px solid #8c8c8c;
-  width: 12px;
-  height: 12px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  outline: none;
-}
-.content .container .middle-block .filter .size .sizeform .sizeform-right .sizeform-block__text {
+.content .container .middle-block .filter .size .sizeform .sizeform-right .sizeform-block label {
+  position: relative;
   font-family: Lato;
   color: #8c8c8c;
   font-size: 14px;
   font-weight: 300;
   line-height: 30px;
   text-align: left;
+}
+.content .container .middle-block .filter .size .sizeform .sizeform-right .sizeform-block input {
+  display: none;
+}
+.content .container .middle-block .filter .size .sizeform .sizeform-right .sizeform-block label:before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border: 1px solid #8c8c8c;
+  vertical-align: middle;
+  margin-right: 9px;
+}
+.content .container .middle-block .filter .size .sizeform .sizeform-right .sizeform-block input:checked + label:after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: black;
+  vertical-align: middle;
+  position: absolute;
+  left: 2px;
+  top: 4px;
+  background: url(../img/checkmark.png) no-repeat;
+  background-size: 100%;
 }
 .content .container .middle-block .filter .size .seporator {
   background-color: rgba(102, 102, 102, 0.15);
@@ -316,20 +378,20 @@
   line-height: 24px;
   text-align: left;
 }
-.content .container .middle-block .content-right .content-right-viev .viev-right .view .view-icons {
-  font-size: 18px;
-}
-.content .container .middle-block .content-right .content-right-viev .viev-right .view .view-icons__link {
+.content .container .middle-block .content-right .content-right-viev .viev-right .view__link {
   text-decoration: none;
   color: #8c8c8c;
   padding: 8px 10px;
 }
-.content .container .middle-block .content-right .content-right-viev .viev-right .view .view-icons__link:hover {
+.content .container .middle-block .content-right .content-right-viev .viev-right .view__link:hover {
   color: #333;
   padding: 7px 9px;
   background-color: #fff;
   box-sizing: border-box;
   border: 1px solid #e5e5e5;
+}
+.content .container .middle-block .content-right .content-right-viev .viev-right .view .view-icons {
+  font-size: 18px;
 }
 .content .container .middle-block .content-right .content-right-goods .featured_products {
   padding-top: 20px;

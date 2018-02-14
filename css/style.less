@@ -76,15 +76,31 @@
 				display: -o-flex;
 				display: flex;
 				padding: 7px 0 8px 0;
-				&__img { padding-right: 10px; }
-				&__text {
-					font-family: 'Lato';
-					color:  #ccb48e;
-					font-size: 14px;
-					font-weight: 300;
-					line-height: 16px;
-					text-align: left;
+				.link {
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					text-decoration: none;
+					&__img { 
+						font-family: 'Lato';
+						color:  #ccb48e;
+						font-size: 14px;
+						font-weight: 300;
+						line-height: 16px;
+						padding-right: 10px;
+					}
+					&__text {
+						font-family: 'Lato';
+						color:  #ccb48e;
+						font-size: 14px;
+						font-weight: 300;
+						line-height: 16px;
+						text-align: left;
+					}
 				}
+				
 				.separator { color: rgba(204, 180, 142, 0.4); display: inline-block; margin: 0 15px 0 15px;}
 			}
 		}
